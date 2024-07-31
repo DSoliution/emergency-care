@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  @apply bg-white;
+}
+
+@layer base {
+  *,body,html {
+    @apply box-border text-accent font-poppins;
+  }
+  body,html{
+    @apply overflow-x-hidden relative;
+  }
+  input,
+  textarea,
+  button,
+  select,
+  a{
+    @apply font-poppins;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
